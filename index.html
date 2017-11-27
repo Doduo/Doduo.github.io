@@ -11,66 +11,67 @@
 </head>
 
 <body>
-	<div class="main">
-    <div class="person-info">
-        <section class="account-info relative">
-            <div class="info">
-                <img src="http://wx.qlogo.cn/mmopen/mMWf2t02m5MEdRW6rHp1764pk0FicczDmMMQR1kRMJpOPk1PeaK4hLyfg0qf0GWtJsFhKemgSjFJuLShemwcLgQPkbr80usFL/0" alt="" class="fl user-header" />
-                <div class="user-base">
-                    <p class="uname inline">23</p>
-                    <p class="integral"><span>积分：</span>
-                        <var>0</var>
-                    </p>
+    <div class="main">
+        <div class="person-info">
+            <section class="account-info relative">
+                <div class="info">
+                    <img src="http://wx.qlogo.cn/mmopen/mMWf2t02m5MEdRW6rHp1764pk0FicczDmMMQR1kRMJpOPk1PeaK4hLyfg0qf0GWtJsFhKemgSjFJuLShemwcLgQPkbr80usFL/0" alt="" class="fl user-header" />
+                    <div class="user-base">
+                        <p class="uname inline">23</p>
+                        <p class="integral"><span>积分：</span>
+                            <var>0</var>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="absolute mall"><a href="/integralMall/index.shtml" style="color: white;">积分<br/>商城</a></div>
-        </section>
-        <section class="all-order">
-            <ul class="order-info">
-                <li><a href="/order/orderList.shtml">全部订单</a></li>
-                <li>
-                    <ul class="clearfix">
-                        <li><a href="/order/orderList.shtml?orderFlag=unPay">待付款</a></li>
-                        <li><a href="/order/orderList.shtml?orderFlag=unSend">待发货</a></li>
-                        <li><a href="/order/orderList.shtml?orderFlag=unReceive">待收货</a></li>
-                        <li><a href="/order/refundOrderList.shtml">退款</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <section class="user-info">
+                <div class="absolute mall"><a href="/integralMall/index.shtml" style="color: white;">积分<br/>商城</a></div>
+            </section>
+            <section class="all-order">
+                <ul class="order-info">
+                    <li><a href="/order/orderList.shtml">全部订单</a></li>
+                    <li>
+                        <ul class="clearfix">
+                            <li><a href="/order/orderList.shtml?orderFlag=unPay">待付款</a></li>
+                            <li><a href="/order/orderList.shtml?orderFlag=unSend">待发货</a></li>
+                            <li><a href="/order/orderList.shtml?orderFlag=unReceive">待收货</a></li>
+                            <li><a href="/order/refundOrderList.shtml">退款</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="user-info">
+                <ul>
+                    <li onclick="goToTab('userCenter/userInfo.shtml')"><a href="javascript:;">我的资料</a></li>
+                    <!-- erp店铺啥也不显示 -->
+                    <li onclick="goToTab('')"><a href="http://cart.maihuotong.cn/cart/list.shtml">我的购物车</a></li>
+                    <li onclick="goToTab('userCenter/myCollection.shtml')"><a href="javascript:;">我的收藏</a></li>
+                    <li onclick="goToTab('userCenter/myCoupon.shtml')"><a href="javascript:;">我的优惠券</a></li>
+                    <li onclick="goToTab('userCenter/myFootPrint.shtml')"><a href="javascript:;">我的足迹</a></li>
+                    <li onclick="goToTab('userCenter/actEntrance.shtml')"><a href="javascript:;">营销中心</a></li>
+                    <li onclick="goToTab('address/list.shtml')"><a href="javascript:;">收货地址管理</a></li>
+                    <li onclick="goToTab('userCenter/account.shtml')"><a href="javascript:;">账号管理</a> </li>
+                    <li onclick="goToTab('store/list.shtml')"><a href="javascript:;">自提门店</a></li>
+                    <li onclick="goToTab('')"><a href="javascript:;">消息提醒设置</a></li>
+                </ul>
+            </section>
+        </div>
+        <!-- 底部开始 -->
+        <!-- 底部公共部分 -->
+        <div class="footer-fixed">
             <ul>
-                <li onclick="goToTab('userCenter/userInfo.shtml')"><a href="javascript:;">我的资料</a></li>
-                <!-- erp店铺啥也不显示 -->
-                <li onclick="goToTab('')"><a href="http://cart.maihuotong.cn/cart/list.shtml">我的购物车</a></li>
-                <li onclick="goToTab('userCenter/myCollection.shtml')"><a href="javascript:;">我的收藏</a></li>
-                <li onclick="goToTab('userCenter/myCoupon.shtml')"><a href="javascript:;">我的优惠券</a></li>
-                <li onclick="goToTab('userCenter/myFootPrint.shtml')"><a href="javascript:;">我的足迹</a></li>
-                <li onclick="goToTab('userCenter/actEntrance.shtml')"><a href="javascript:;">营销中心</a></li>
-                <li onclick="goToTab('address/list.shtml')"><a href="javascript:;">收货地址管理</a></li>
-                <li onclick="goToTab('userCenter/account.shtml')"><a href="javascript:;">账号管理</a> </li>
-                <li onclick="goToTab('store/list.shtml')"><a href="javascript:;">自提门店</a></li>
-                <li onclick="goToTab('')"><a href="javascript:;">消息提醒设置</a></li>
+                <li class="home-li"><a href="http://m.maihuotong.cn/index/home.shtml?shopId=e8c9013a559c42aca1e49d907ab81b24" class="inline"><img src="/static/img/home-icon.png" alt=""><p>首页</p></a></li>
+                <li class="category-li"><a href="http://m.maihuotong.cn/productClassify/catList.shtml?shopId=e8c9013a559c42aca1e49d907ab81b24" class="inline"><img src="/static/img/category.png" alt=""><p>分类</p></a></li>
+                <li class="shop-li"><a href="http://cart.maihuotong.cn/cart/list.shtml" class="inline"><img src="/static/img/shopcar-icon.png" alt=""><p>购物车</p></a></li>
+                <li class="my-li active"><a href="/userCenter/index.shtml" class="inline"><img src="/static/img/my-icon-active.png" alt=""><p>我的</p></a></li>
             </ul>
-        </section>
-    </div>
-    <!-- 底部开始 -->
-    <!-- 底部公共部分 -->
-    <meta charset="UTF-8">
-    <div class="footer-fixed">
-        <ul>
-            <li class="home-li"><a href="http://m.maihuotong.cn/index/home.shtml?shopId=e8c9013a559c42aca1e49d907ab81b24" class="inline"><img src="/static/img/home-icon.png" alt=""><p>首页</p></a></li>
-            <li class="category-li"><a href="http://m.maihuotong.cn/productClassify/catList.shtml?shopId=e8c9013a559c42aca1e49d907ab81b24" class="inline"><img src="/static/img/category.png" alt=""><p>分类</p></a></li>
-            <li class="shop-li"><a href="http://cart.maihuotong.cn/cart/list.shtml" class="inline"><img src="/static/img/shopcar-icon.png" alt=""><p>购物车</p></a></li>
-            <li class="my-li active"><a href="/userCenter/index.shtml" class="inline"><img src="/static/img/my-icon-active.png" alt=""><p>我的</p></a></li>
-        </ul>
-    </div>
+        </div>
     </div>
     <!-- 底部版权 -->
-<div class="sticky-footers">
-	<p class="center">&copy;&nbsp;2006-2017&nbsp;由鞋掌柜提供技术支持</p>
-</div>
+    <div class="sticky-footers">
+        <p class="center">&copy;&nbsp;2006-2017&nbsp;由鞋掌柜提供技术支持</p>
+    </div>
+    <script>
+        alert(navigator.userAgent)
+    </script>
 </body>
-
 
 </html>
