@@ -1,0 +1,56 @@
+body , html {max-width: 1080px;margin: auto;color: #333333;}
+.all-order , .user-info {background-color: #ffffff;}
+.account-info {width: 100%;height: 13.75rem;background: url(../img/personal-bg.png) no-repeat center;background-size: 100% 100%;}
+.person-info .info {padding-top: 5.16rem;margin-left: 2.58rem;}
+.info img {width: 6.83rem;height: 6.83rem;    border: 0.4rem solid rgba(0,0,0,0.2);border-radius: 50%;}
+.user-base {padding-left: 8.15rem;color: #ffffff;margin-top: 1.8rem;}
+.user-base .uname {font-size: 1.33rem;}
+.user-base .integral {font-size: 1.08rem;margin-top: 0.66rem;}
+.user-base .members {padding: 0.37rem 0.25rem;font-size: 0.83px;background-color: #fa9b36;border-radius: 5px;vertical-align: text-top;margin-left: 0.7rem;}
+.account-info .mall {width: 4.16rem;height: 4.16rem;background: url(../img/jifen.png) no-repeat center;background-size: 100% 100%;top: 1.83rem;right: 3.2rem;font-size: 1.08rem;color: #ffffff;display: -webkit-box;display: -moz-box;-webkit-box-align: center;-webkit-box-pack: center;}
+.order-info li , .user-info li {height: 3.0rem;line-height: 3.0rem;font-size: 1.0rem;border-bottom: 1px solid #e5e5e5;}
+.order-info li>ul>li {width: 25%;float: left;border-right: 1px solid #e5e5e5;box-sizing: border-box;-webkit-box-sizing: border-box;text-align: center;border-bottom: none;}
+.order-info li>ul>li:last-child {border-right: none;}
+.order-info li:first-child a ,.user-info li a {margin-left: 1.8rem;}
+.person-info {padding-bottom: 4.5rem;}
+/*.bottom {margin-top: 2.41rem;}*/
+.order-nav ul>li {width: 20%;height: 2.83rem;line-height: 2.83rem;text-align: center;float: left;border-right: 1px solid #e5e5e5;box-sizing: border-box;-webkit-box-sizing: border-box;border-bottom: 1px solid #e5e5e5;}
+.order-nav ul>li:last-child {border-right: none;}
+.order-nav ul>li.active {background-color: #de2230;font-size: 1.0rem;color: #ffffff;}
+.order-nav ul>li.active a {color: #ffffff;}
+.order-info .goodes-img {width: 5.25rem;height: 5.25rem;}
+.order-info .info-txt {padding-left: 5.83rem;}
+.order-info .info-txt p {overflow:hidden;text-overflow: ellipsis;white-space: nowrap;}
+.order-info {margin: 0.7rem 0;font-size: 1.0rem;background-color: #ffffff;}
+.info-del {padding: 0.6rem 0 1.2rem;font-size: 0.83rem;}
+.num {right: 0;top: 0;}
+.info-del , .num {color: #999999;}
+.order-price span , .price span {font-size: 1.2rem;color: #de2230;}
+.price var , .price abbr {color: #DE2230;}
+.order-info .order-num {font-size: 0.83rem;height: 1.66rem;background-color: #e5e5e5;line-height: 1.66rem;padding: 0 3%;}
+.order-info>a {padding: 0.83rem 0;border-bottom: 1px solid #e5e5e5;width: 94%;margin: auto;}
+.price bdo {color: #999999;font-size: 0.83rem;margin-right: 0.7rem;}
+.price em {margin-left: 0.7rem;}
+.price-wp , .pay-state {padding: 0.83rem 0;width: 94%;margin: auto;border-bottom: 1px solid #e5e5e5;}
+.pay-state {border-bottom: none;}
+.pay-state>a {display: inline-block;width: 4.83rem;height: 1.87rem;font-size: 0.91rem;line-height: 1.87rem;text-align: center;color: #ffffff;}
+.pay-state .cancle , .pay-state .refund , .pay-state .goods , .cancle-refund {background-color: #ffb238;}
+.pay-state .pay , .pay-state .look-detail  {background-color: #de2230;margin-left: 0.83rem;}
+.order-nav {position: fixed;top: 0;left: 0;right: 0;width: 100%;background-color: #ffffff;z-index: 5;}
+.order-list {padding-top: 2.83rem;padding-bottom: 6.2rem;}
+/*
+.all-order-box .bottom {height: 6.2rem;line-height: 6.2rem;}
+*/
+/*
+.all-order-box .bottom p {padding: 0;}
+*/
+.all-order-box .bottom {p/*osition: fixed;*/bottom: 0;left: 0;right: 0;width: 100%;}
+.price-wp i {display: inline-block;color: #ffffff;font-size: 0.91rem;padding: 2px 5px;background-color: #de2230;}
+.modal {width: 100%;height: 100%;background: rgba(0,0,0,.5);position: fixed;top: 0;left: 0;z-index: 100;}
+.alert{width: 22.5rem;height: 9.33rem;background-color: #ffffff;position: fixed;top: 0;left: 0;right: 0;bottom: 0;margin: auto;z-index: 500;}
+.alert p {font-size: 1.0rem;text-align: center;padding: 2.41rem;}
+.alert .button a {width: 7.33rem;height: 1.87rem;text-align: center;line-height: 1.87rem;color: #fff;display: inline-block;border-radius: 1.87rem;}
+/*.jconfirm.jconfirm-light .jconfirm-box .jconfirm-buttons button {width: 7.33rem;height: 1.87rem;text-align: center;line-height: 1.87rem;color: #fff;display: inline-block;border-radius: 1.87rem;}*/
+.jconfirm-content {text-align: center;}
+.cancle-cancle {background-color: #ffb238;}
+.confirm-cancle {background-color: #de2230;margin: 0 1.33rem 0 3.12rem;}
