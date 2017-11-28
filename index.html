@@ -39,6 +39,7 @@ footer {
 <body>
     <header>
         <h1>header</h1>
+        <h2 id="a"></h2>
     </header>
     <main>
         <ul>
@@ -85,7 +86,8 @@ footer {
     </footer>
     <script>
         var userAgentStr = navigator.userAgent;
-        alert(userAgentStr)
+        document.getElementById("a").innerHTML =userAgentStr;
+
     </script>
 </body>
 
