@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Document</title>
+</head>
+<style>
+/*.aa {
+    position: fixed;
+    bottom: 0;
+}*/
+
+div {
+    margin: 60px 0;
+}
+</style>
+
+<body>
+    <div class="aa">
+        <div>
+            <input type="text" value="1" />
+        </div>
+        <div>
+            <input type="text" value="2" />
+        </div>
+        <div>
+            <input type="text" value="3" />
+        </div>
+        <div>
+            <input type="text" value="4" />
+        </div>
+        <div>
+            <input type="text" value="5" />
+        </div>
+        <div>
+            <input type="text" value="6" />
+        </div>
+        <div>
+            <input type="text" value="7" />
+        </div>
+        <div>
+            <input type="text" value="8" />
+        </div>
+        <div>
+            <input type="text" value="9" />
+        </div>
+        <div>
+            <input type="text" value="10" />
+        </div>
+        <div>
+            <input type="text" value="11" jump=true/>
+        </div>
+        <div>
+            <input type="text" value="12" jump=true0/>
+        </div>
+    </div>
+    <script src="http://lib.baomitu.com/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    function jump_top() {
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端  
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端  
+        if (isAndroid) {
+            $("body").css("height", "0px");
+            $("body").css("height", document.body.scrollHeight);
+            $('[jump=true]').bind("focus", function(event) {
+                if ($(event.target).attr("type") == "button") return;
+                $("body").css("margin-bottom", "500px");
+                $(window).scrollTop($(event.target).offset().top - 100);
+                event.preventDefault();
+            });
+            $("body").bind("click", function(event) {
+                if ($(event.target).attr("type") == "button") return;
+                $("body").css("height", "0px");
+                $("body").css("height", document.body.scrollHeight);
+                $("body").css("margin-bottom", "0px");
+                event.preventDefault();
+            });
+        };
+    }
+    jump_top();
+    </script>
+</body>
+
+</html>
